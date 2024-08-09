@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img src="{% static 'image/logo.png' %}" alt="">
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick= "hideMenu()" ></i>
+                <ul>
+                    <li><a href="{% url 'home' %}">HOME</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'course' %}">COURSE</a></li>
+                    <li><a href="{% url 'blog' %}">BLOG</a></li>
+                    <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick= "showMenu()"></i>
+        </nav>
+        
+        {% block content%}
+
+        {% endblock%}
+     <!-- ---Footer -->
+ <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit libero iure excepturi ipsam quisquam molestias quo a, <br>dolores dolore quae qui, itaque fugit hic, laborum veritatis! Quis, delectus architecto.</p>
+
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa-regular fa-heart"></i></i> by Vivek Verma </p>
+  </section>
+<!-- javascript use for menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+           navLinks.style.right ="0";
+       }
+       function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+    </script>    
+</body>
+</html>

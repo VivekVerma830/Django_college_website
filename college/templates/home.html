@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+ <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>World Website is now one of the easiest thing in the World. you just need to learn <br>  Python, Django and you good to go .</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+<!-- course -->
+
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    
+    <div class="row">
+       <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, at deserunt quos expedita sint perspiciatis consequatur recusandae doloribus veniam facere molestiae illum nobis fugiat velit maiores adipisci impedit veritatis nihil.</p>
+       </div> 
+       <div class="course-col">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, at deserunt quos expedita sint perspiciatis consequatur recusandae doloribus veniam facere molestiae illum nobis fugiat velit maiores adipisci impedit veritatis nihil.</p>
+       </div> 
+       <div class="course-col">
+        <h3>Post Graduations</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, at deserunt quos expedita sint perspiciatis consequatur recusandae doloribus veniam facere molestiae illum nobis fugiat velit maiores adipisci impedit veritatis nihil.</p>
+       </div> 
+    </div>
+</section>
+<!-- campus -->
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'image/london.png' %}" alt="">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'image/newyork.png' %}" alt="">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'image/washington.png' %}" alt="">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ----facilities -->
+ <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="{% static 'image/library.png' %}" alt="">
+            <h3>World Class Library</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe dolores est tenetur. Facilis neque earum qui mollitia totam quia! Amet est at, provident libero recusandae voluptatibus quasi praesentium. Reiciendis!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'image/basketball.png' %}" alt="">
+            <h3>Largest Play Ground</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe dolores est tenetur. Facilis neque earum qui mollitia totam quia! Amet est at, provident libero recusandae voluptatibus quasi praesentium. Reiciendis!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'image/cafeteria.png' %}" alt="">
+            <h3>Tasty And Healthy Food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe dolores est tenetur. Facilis neque earum qui mollitia totam quia! Amet est at, provident libero recusandae voluptatibus quasi praesentium. Reiciendis!</p>
+        </div>
+    </div>
+ </section>
+
+ <!-- textimonials -->
+  <section class="testimonials">
+    <h1>What Our Students Say</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="{% static 'image/user1.jpg' %}" alt="">
+          <div>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem saepe, vel nesciunt ea minima libero ducimus quaerat fuga officia voluptates alias, voluptatum odio deleniti odit. Obcaecati excepturi mollitia qui natus!</p>
+             <h3>Christine Berkley</h3>
+             <i class="fa fa-star" ></i>
+             <i class="fa fa-star" ></i>
+             <i class="fa fa-star" ></i>
+             <i class="fa fa-star" ></i>
+             <i class="fa fa-star-half" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="{% static 'image/user2.jpg' %}"alt="">
+          <div>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem saepe, vel nesciunt ea minima libero ducimus quaerat fuga officia voluptates alias, voluptatum odio deleniti odit. Obcaecati excepturi mollitia qui natus!</p>
+             <h3>David Byer</h3>
+             <i class="fa fa-star" ></i>
+             <i class="fa fa-star" ></i>
+             <i class="fa fa-star" ></i>
+             <i class="fa fa-star" ></i>
+             <i class="fa fa-star-half" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
+   
+  </section>
+
+  <!-- ---Call T Action -->
+
+  <section class="cta">
+    <h1>Enroll For Our Various Online Courses <br> Anywhere From The World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+
+  </section>
+
+  {% endblock %}
+
+ 
